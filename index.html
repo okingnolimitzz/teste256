@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css"/>
+     <!-- Fontawesome CDN Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+     <!--box1 icons-->
+     <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <!--slick slider css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--leaflet map-->
+
+    <title>Monte sinai</title>
+
+</head>
+<body>
+
+
+     <!-- início do preloader -->
+        <div id="preloader">
+            <div class="inner">
+        <!--HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+            <img src="img/preloader3.gif">
+        </div>
+    </div>
+<!-- fim do preloader --> 
+
+
+<div class="menu">
+    <ul>
+        <li><a style="color:#ff5e00;" href="index.html">Home</a></li>
+        <li><a href="sobre.html">Quem Somos</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="venda-ita.html">Imóveis</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</div><!--menu-->
+
+    
+    <!--logo-->
+<figure class="logo">
+    <img src="img/logo3.png" alt="logo">
+</figure>
+<!--logo-->
+<!--FIM MENU-->
+
+
+    <div class="clear"></div><!--clear-->
+
+    
+<div class="header-completo">     
+<header></header>
+
+
+<main class="slider-header" id="slider-header">
+<div class="lists-header">
+<div class="container-list">
+    <h2>Engenharia Civil</h2>
+    <p>Projetos - Gerenciamento -<br>Execução de Obras e Laudos-Técnicos</p>
+    <a href="https://wa.me/+5515996840590"><button class="list-btn">Saiba Mais!</button></a>
+</div><!--container-list-->
+</div><!--lists-header-->
+
+
+<div class="header-lists2">
+    <div class="list-container2">
+        <h2>Investimentos Imobiliários</h2>
+        <p>Regularização - Compra e Venda de Imóveis</p>
+        <a href="https://wa.me/+5515996840590"><button class="list-btn">Saiba Mais!</button></a>
+    </div><!--container-list2-->
+</div><!--lists-header2-->
+</main><!--slider-header-->
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+<script src="jquery/jquery.js"></script>
+<script src="jquery/functions.js"></script>
+<!--<script src="jquery-3.6.4.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js" integrity="sha512-h9kKZlwV1xrIcr2LwAPZhjlkx+x62mNwuQK5PAu9d3D+JXMNlGx8akZbqpXvp0vA54rz+DrqYVrzUGDMhwKmwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js" integrity="sha512-fDGBclS3HUysEBIKooKWFDEWWORoA20n60OwY7OSYgxGEew9s7NgDaPkj7gqQcVXnASPvZAiFW8DiytstdlGtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--preloader-->
+<script>
+    //<![CDATA[
+    $(window).on('load', function () {
+    $('#preloader .inner').fadeOut();
+    $('#preloader').delay(10).fadeOut('slow'); 
+    $('body').delay(10).css({'overflow': 'visible'});
+  })
+  //]]>
+</script>
+<!-- FIM JavaScript -->
+
+
+</div><!--header-completo-->
+
+
+<div class="clear"></div><!--clear-->
+
+
+<!--INÍCIO slider "Pronto para morar"-->  
+<section class="propriedades pcontainer" id="propriedades">
+    <div class="casa-aqui">
+        <h2>Invista em Itapeva-SP</h2>
+    </div><!--casa-aqui-->
+    <div class="propriedades-container pcontainer">
+            <!--box1-->
+        <div class="box">
+            <a href="aptos-single.html">
+            <img src="img/isa.JPG" alt="">
+            <div class="tamanho-apartamento">
+                </a>
+                <i class='bx bx-copy'></i>
+                <p>220m<sup>2</sup>-452m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 4.686.000</h3>
+            <div class="content">
+                <div class="text">
+                    <h3>Isa Brooklin-Nortis</h3>
+                    <p>Brooklin, São Paulo</p>
+                </div><!--text-->
+                <div class="icon">
+                    <i class='bx bx-bed'><span>4</span></i>
+                    <i class='bx bx-car' ><span>3</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box1---->
+
+        <!--box2-->
+        <div class="box">
+            <img src="img/p2.jpg" alt="">
+            <div class="tamanho-apartamento">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content">
+                <div class="text">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box2---->
+
+         <!--box3-->
+         <div class="box">
+            <img src="img/p3.jpg" alt="">
+            <div class="tamanho-apartamento">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content">
+                <div class="text">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box3---->
+
+        <!--box4-->
+        <div class="box">
+            <img src="img/p4.jpg" alt="">
+            <div class="tamanho-apartamento">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content">
+                <div class="text">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box4---->
+
+         <!--box5-->
+         <div class="box">
+            <img src="img/p5.jpg" alt="">
+            <div class="tamanho-apartamento">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content">
+                <div class="text">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box5---->
+
+        <!--box6-->
+        <div class="box">
+            <img src="img/p6.jpg" alt="">
+            <div class="tamanho-apartamento">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content">
+                <div class="text">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box6---->
+
+         <!--box7-->
+         <div class="box">
+            <img src="img/p6.jpg" alt="">
+            <div class="tamanho-apartamento">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content">
+                <div class="text">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box7---->
+
+         <!--box8-->
+         <div class="box">
+            <img src="img/p6.jpg" alt="">
+            <div class="tamanho-apartamento">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content">
+                <div class="text">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box8---->
+
+         <!--box9-->
+         <div class="box">
+            <img src="img/p6.jpg" alt="">
+            <div class="tamanho-apartamento">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content">
+                <div class="text">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box9---->
+
+         <!--box10-->
+         <div class="box">
+            <img src="img/p6.jpg" alt="">
+            <div class="tamanho-apartamento">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content">
+                <div class="text">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box10---->
+
+    </div><!--propriedades-container pcontainer-->
+
+    <!--ICON-->
+    <div class="icon-arrow">
+        <i id="arrow-prev" class="fa-solid fa-caret-left" style="color: white;"></i>
+        <i id="arrow-next" class="fa-solid fa-caret-right" style="color: white;"></i>
+    </div><!--icon-arrow-->
+
+    <div class="ver-mais">
+        <a href="venda-ita.html"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #ff5e00;"></i></a>
+       <!-- <span>Ver mais</span>
+    </div><!--ver-mais-->
+
+</section><!--propriedades pcontainer-->
+<!--FIM slider "Pronto para morar"-->  
+
+
+<div class="clear"></div>
+
+
+<!-- INÍCIO segundo slider "Lançamentos"-->
+<section class="propriedades2 pcontainer" id="propriedades2">
+
+    <div class="casa-aqui2">
+        <h2>Invista em São Paulo</h2>
+    </div><!--casa-aqui-2-->
+
+    <div class="propriedades-container2 pcontainer" id="propriedades-container2">
+
+        <!--box2-1---->  
+        <div class="box2">
+            <img src="img/p1.jpg" alt="">
+            <div class="tamanho-apartamento2">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content2">
+                <div class="text2">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon2">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box2-1---->  
+        
+        <!--box2-2---->
+        <div class="box2">
+            <img src="img/p2.jpg" alt="">
+            <div class="tamanho-apartamento2">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content2">
+                <div class="text2">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon2">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box2-2---->
+
+        <!--box2-3---->
+        <div class="box2">
+            <img src="img/p3.jpg" alt="">
+            <div class="tamanho-apartamento2">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content2">
+                <div class="text2">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon2">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box2-3---->
+
+        <!--box2-4---->
+        <div class="box2">
+            <img src="img/p4.jpg" alt="">
+            <div class="tamanho-apartamento2">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content2">
+                <div class="text2">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon2">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box2-4---->
+
+        <!--box2-5---->
+        <div class="box2">
+            <img src="img/p5.jpg" alt="">
+            <div class="tamanho-apartamento2">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content2">
+                <div class="text2">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon2">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box2-5---->
+
+        <!--box2-6---->
+        <div class="box2">
+            <img src="img/p6.jpg" alt="">
+            <div class="tamanho-apartamento2">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content2">
+                <div class="text2">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon2">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box2-6---->
+
+         <!--box2-7-->
+         <div class="box2">
+            <img src="img/p6.jpg" alt="">
+            <div class="tamanho-apartamento2">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content2">
+                <div class="text2">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon2">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box2-7---->
+
+         <!--box2-8-->
+         <div class="box2">
+            <img src="img/p6.jpg" alt="">
+            <div class="tamanho-apartamento2">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content2">
+                <div class="text2">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon2">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box2-8---->
+
+         <!--box2-9-->
+         <div class="box2">
+            <img src="img/p6.jpg" alt="">
+            <div class="tamanho-apartamento2">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content2">
+                <div class="text2">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon2">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box2-9---->
+
+         <!--box2-10-->
+         <div class="box2">
+            <img src="img/p6.jpg" alt="">
+            <div class="tamanho-apartamento2">
+                <i class='bx bx-copy'></i>
+                <p>32m<sup>2</sup>-64m<sup>2</sup></p>
+            </div><!--tamanho-apartamento-->
+            <h3>R$ 1.420.000</h3>
+            <div class="content2">
+                <div class="text2">
+                    <h3>Prédio Up Life</h3>
+                    <p>Tucuruvi, São Paulo</p>
+                </div><!--text-->
+                <div class="icon2">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath' ><span>2</span></i>
+                </div><!--icon-->
+            </div><!--content-->
+        </div><!--box2-10---->
+
+    </div><!--propriedades-container2 pcontainer-->
+
+    <!--icon-arrow-->
+    <div class="icon-arrow2">
+        <i id="arrow-prev2" class="fa-solid fa-caret-left" style="color: white;"></i>
+        <i id="arrow-next2" class="fa-solid fa-caret-right" style="color: white;"></i>
+    </div><!--icon-arrow-->
+
+    <div class="ver-mais2">
+        <a href="venda.html"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #ff5e00;"></i></a>
+       <!-- <span>Ver mais</span>
+    </div><!--ver-mais2-->
+
+</section><!--propriedades2 pcontainer-->
+<!--FIM Segundo slider "imóveis na planta"-->
+
+
+<!--newsletter INICIO-->
+<article class="news">
+
+    <figure class="foto-news">
+        <img src="img/news.JPG" alt=""> <!--alterar diretório se falhar-->
+    </figure><!--foto-news-->
+
+    <div class="barato-container">
+        <h2 class="barato">Fale com um especialista!
+        <p>Clique no ícone do Whatsapp <br>para melhores informações.</p>
+        <form class="input-news" method="get" action="https://wa.me/+5515996840590">
+            <!--<input type="email" placeholder="Digite seu melhor e-mail">-->
+        <div class="wpp-logo">
+        <input type="submit" name="whatsapp" value="Whatsapp!"><a href=""></a>
+        <i class='bx bxl-whatsapp' style='color:#fff'  ></i>
+        </div><!--wpp-logo-->
+    </form><!--input-news-->
+
+    </div><!--barato-container-->
+
+</article><!--news-->
+<!--newsletter FIM-->
+
+
+    <!--Footer INICIO-->
+        <section class="footer">
+         <!---   <div class="texto-mapa">
+                <h2>Faça uma Visita!</h2>
+            </div> <!--texto-mapa-->
+              <!---  <div class="mapa-container"><a href="https://goo.gl/maps/3QjzvvRg6LS9F9k5A"></a>
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7290.748331710701!2d-48.88253792828709!3d-23.982560951605418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c38d62a5bb86e7%3A0x4dec83f5894aabf7!2sTerminal%20Rodovi%C3%A1rio%20de%20Itapeva!5e0!3m2!1spt-BR!2sbr!4v1684494890827!5m2!1spt-BR!2sbr" width="200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div><!--mapa-->
+       <!--- </div> <!--mapa-container-->
+        </section> <!--footer-->
+    <!--Footer FIM-->
+
+</body>
+</html>
